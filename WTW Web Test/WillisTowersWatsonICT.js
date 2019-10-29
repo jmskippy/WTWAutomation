@@ -47,7 +47,7 @@ describe('Willis Towers Watson Automation Web Test', function() {
 
     it('7. Validate that each article in the list displays a link that starts with...', function() {
         cy.get('.coveo-results-column').each(($div, i) => {
-            expect($div).to.contain(websiteprefix+'en-UK')
+            expect($div).to.contain(websiteprefix+'en-US')
         })
     })
 })
